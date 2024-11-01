@@ -53,16 +53,28 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+
 .prize-item {
-    background-color: #4CAF50; /* Original background color */
+    display: flex;
+    align-items: center;
+    background-color: #4CAF50;
     color: #fff;
     padding: 10px;
     margin: 8px 0;
     border-radius: 4px;
     font-size: 18px;
-    text-align: center;
-    transition: background-color 0.3s ease; /* Smooth transition effect */
+    text-align: left; /* Garante que o texto fique alinhado à esquerda */
 }
+
+.gold-number {
+    font-weight: bold;
+    color: #FFD700;
+    font-size: 1.2em;
+    margin-right: 10px;
+    width: 30px; /* Largura fixa para alinhar todos os números à esquerda */
+    text-align: left; /* Alinha o número dentro da coluna */
+}
+
 
 .prize-item:hover {
     background-color: #3e8e41; /* New background color on hover */
@@ -123,4 +135,23 @@ footer .contact {
     font-size: 1.2em;
     padding: 0 8px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 50px; /* Tamanho do ícone */
+    color: #25D366; /* Cor verde do WhatsApp */
+    background-color: white; /* Fundo branco para destacar o ícone */
+    border-radius: 50%; /* Deixa o ícone redondo */
+    padding: 10px; /* Espaço ao redor do ícone */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+    z-index: 1000; /* Garante que o ícone fique no topo */
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
 }
