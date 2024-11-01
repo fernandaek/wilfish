@@ -54,14 +54,20 @@ header {
 }
 
 .prize-item {
-    background-color: #4CAF50;
+    background-color: #4CAF50; /* Original background color */
     color: #fff;
     padding: 10px;
     margin: 8px 0;
     border-radius: 4px;
     font-size: 18px;
     text-align: center;
+    transition: background-color 0.3s ease; /* Smooth transition effect */
 }
+
+.prize-item:hover {
+    background-color: #3e8e41; /* New background color on hover */
+}
+
 
 footer {
     text-align: center;
